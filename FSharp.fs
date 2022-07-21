@@ -70,3 +70,6 @@ let rec occFromIth = function
     | (s, n, c) when s.[n] = c -> 1 + occFromIth(s, n + 1, c)
     | (s, n, c) -> occFromIth(s, n + 1, c)
     
+// 20.3.1
+let vat n x = x + x /100.0 * (float)n    
+    
