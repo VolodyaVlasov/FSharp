@@ -71,5 +71,5 @@ let rec occFromIth = function
     | (s, n, c) -> occFromIth(s, n + 1, c)
     
 // 20.3.1
-let vat n x = x + x /100.0 * (float)n    
+let vat n x = x + x / 100.0 * (float)n    
     
