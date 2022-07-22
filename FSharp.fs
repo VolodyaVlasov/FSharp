@@ -75,4 +75,10 @@ let vat n x = x + x / 100.0 * (float) n
 
 // 20.3.2
 let unvat n x = x * 100.0 / (100.0 + (float) n)
+
+let rec minHelp f n =  
+    if f n = 0 then  n
+    else minHelp f (n + 1) 
     
+// 20.3.3
+let rec min f =  minHelp f 0
